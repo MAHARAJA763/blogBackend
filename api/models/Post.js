@@ -34,6 +34,11 @@ module.exports = {
       collection: "category",
       via: "posts",
     },
+    slug: {
+      type: "string",
+      required: true,
+      unique: true
+    }
   },
 };
 
