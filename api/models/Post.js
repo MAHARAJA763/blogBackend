@@ -13,12 +13,12 @@ module.exports = {
     },
     postContent: {
       type: "string",
-      columnType: "longtext",
+      columnType: "text",
       required: true,
     },
     featureImage: {
       type: "string",
-      columnType: "longtext",
+      columnType: "text",
     },
     tags: {
       type: "string",
@@ -28,7 +28,8 @@ module.exports = {
       defaultsTo: false,
     },
     publishedAt: {
-      type: "date",
+      type: "ref",
+      columnType:"timestamp"
     },
     categories: {
       collection: "category",
